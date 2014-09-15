@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, JHKImageSwitchDirection) {
+    JHKImageSwitchDirectionUp,
+    JHKImageSwitchDirectionDown,
+};
+
 @interface JHKViewController : UIViewController
 
 @end

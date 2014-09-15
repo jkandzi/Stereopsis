@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1850B69A215D4CFD9B12D760 /* libPods-Stereopsis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E15ABBCCBE44BDE992629DC /* libPods-Stereopsis.a */; };
+		2F263BFB19C73290007FFCD2 /* JHKImageListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F263BFA19C73290007FFCD2 /* JHKImageListTests.m */; };
+		2F38C20319C7306B0062B8BA /* JHKImageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F64DBD019C726AA0073B07D /* JHKImageList.m */; };
+		2F38C20419C7306B0062B8BA /* JHKStereoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F64DBD219C726AA0073B07D /* JHKStereoImage.m */; };
+		2F38C20519C7306B0062B8BA /* JHKImageRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F64DBD619C726BD0073B07D /* JHKImageRotationView.m */; };
+		2F38C20619C7306B0062B8BA /* JHKAccelerometerActionRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F64DBDF19C727080073B07D /* JHKAccelerometerActionRecognizer.m */; };
+		2F38C20719C7306B0062B8BA /* JHKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FBC19C7254B009F888A /* JHKViewController.m */; };
+		2F38C20819C7306B0062B8BA /* JHKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F64DBD919C726DC0073B07D /* JHKMenuViewController.m */; };
+		2F38C20919C7306B0062B8BA /* JHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FB619C7254B009F888A /* JHKAppDelegate.m */; };
+		2F64DBEB19C7273D0073B07D /* 1L.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE319C7273D0073B07D /* 1L.png */; };
+		2F64DBEC19C7273D0073B07D /* 1R.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE419C7273D0073B07D /* 1R.png */; };
+		2F64DBED19C7273D0073B07D /* 2L.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE519C7273D0073B07D /* 2L.png */; };
+		2F64DBEE19C7273D0073B07D /* 2R.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE619C7273D0073B07D /* 2R.png */; };
+		2F64DBEF19C7273D0073B07D /* 3L.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE719C7273D0073B07D /* 3L.gif */; };
+		2F64DBF019C7273D0073B07D /* 3R.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE819C7273D0073B07D /* 3R.gif */; };
+		2F64DBF119C7273D0073B07D /* 4L.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBE919C7273D0073B07D /* 4L.gif */; };
+		2F64DBF219C7273D0073B07D /* 4R.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F64DBEA19C7273D0073B07D /* 4R.gif */; };
 		2F778FA719C7254B009F888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA619C7254B009F888A /* Foundation.framework */; };
 		2F778FA919C7254B009F888A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA819C7254B009F888A /* CoreGraphics.framework */; };
 		2F778FAB19C7254B009F888A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FAA19C7254B009F888A /* UIKit.framework */; };
 		2F778FB119C7254B009F888A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FAF19C7254B009F888A /* InfoPlist.strings */; };
 		2F778FB319C7254B009F888A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FB219C7254B009F888A /* main.m */; };
-		2F778FB719C7254B009F888A /* JHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FB619C7254B009F888A /* JHKAppDelegate.m */; };
 		2F778FBA19C7254B009F888A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FB819C7254B009F888A /* Main.storyboard */; };
-		2F778FBD19C7254B009F888A /* JHKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FBC19C7254B009F888A /* JHKViewController.m */; };
 		2F778FBF19C7254B009F888A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FBE19C7254B009F888A /* Images.xcassets */; };
 		2F778FC619C7254B009F888A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FC519C7254B009F888A /* XCTest.framework */; };
 		2F778FC719C7254B009F888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA619C7254B009F888A /* Foundation.framework */; };
 		2F778FC819C7254B009F888A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FAA19C7254B009F888A /* UIKit.framework */; };
 		2F778FD019C7254B009F888A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FCE19C7254B009F888A /* InfoPlist.strings */; };
-		2F778FD219C7254B009F888A /* StereopsisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FD119C7254B009F888A /* StereopsisTests.m */; };
+		E9DB6F2B50684347B2FF142F /* libPods-StereopsisTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E92FE4F6F444488A0D9EFED /* libPods-StereopsisTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0279D60025E44057AE8A0A2E /* Pods-Stereopsis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stereopsis.xcconfig"; path = "Pods/Pods-Stereopsis.xcconfig"; sourceTree = "<group>"; };
+		115B21300EA44759968C0F0C /* Pods-StereopsisTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StereopsisTests.xcconfig"; path = "Pods/Pods-StereopsisTests.xcconfig"; sourceTree = "<group>"; };
+		2F263BFA19C73290007FFCD2 /* JHKImageListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKImageListTests.m; sourceTree = "<group>"; };
+		2F64DBCF19C726AA0073B07D /* JHKImageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKImageList.h; sourceTree = "<group>"; };
+		2F64DBD019C726AA0073B07D /* JHKImageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKImageList.m; sourceTree = "<group>"; };
+		2F64DBD119C726AA0073B07D /* JHKStereoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKStereoImage.h; sourceTree = "<group>"; };
+		2F64DBD219C726AA0073B07D /* JHKStereoImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKStereoImage.m; sourceTree = "<group>"; };
+		2F64DBD519C726BD0073B07D /* JHKImageRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKImageRotationView.h; sourceTree = "<group>"; };
+		2F64DBD619C726BD0073B07D /* JHKImageRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKImageRotationView.m; sourceTree = "<group>"; };
+		2F64DBD819C726DC0073B07D /* JHKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKMenuViewController.h; sourceTree = "<group>"; };
+		2F64DBD919C726DC0073B07D /* JHKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKMenuViewController.m; sourceTree = "<group>"; };
+		2F64DBDE19C727080073B07D /* JHKAccelerometerActionRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKAccelerometerActionRecognizer.h; sourceTree = "<group>"; };
+		2F64DBDF19C727080073B07D /* JHKAccelerometerActionRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKAccelerometerActionRecognizer.m; sourceTree = "<group>"; };
+		2F64DBE319C7273D0073B07D /* 1L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1L.png; sourceTree = "<group>"; };
+		2F64DBE419C7273D0073B07D /* 1R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1R.png; sourceTree = "<group>"; };
+		2F64DBE519C7273D0073B07D /* 2L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2L.png; sourceTree = "<group>"; };
+		2F64DBE619C7273D0073B07D /* 2R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2R.png; sourceTree = "<group>"; };
+		2F64DBE719C7273D0073B07D /* 3L.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3L.gif; sourceTree = "<group>"; };
+		2F64DBE819C7273D0073B07D /* 3R.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3R.gif; sourceTree = "<group>"; };
+		2F64DBE919C7273D0073B07D /* 4L.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4L.gif; sourceTree = "<group>"; };
+		2F64DBEA19C7273D0073B07D /* 4R.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4R.gif; sourceTree = "<group>"; };
 		2F778FA319C7254B009F888A /* Stereopsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stereopsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F778FA619C7254B009F888A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F778FA819C7254B009F888A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +88,8 @@
 		2F778FC519C7254B009F888A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2F778FCD19C7254B009F888A /* StereopsisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StereopsisTests-Info.plist"; sourceTree = "<group>"; };
 		2F778FCF19C7254B009F888A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2F778FD119C7254B009F888A /* StereopsisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StereopsisTests.m; sourceTree = "<group>"; };
+		3E15ABBCCBE44BDE992629DC /* libPods-Stereopsis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stereopsis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E92FE4F6F444488A0D9EFED /* libPods-StereopsisTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StereopsisTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +100,7 @@
 				2F778FA919C7254B009F888A /* CoreGraphics.framework in Frameworks */,
 				2F778FAB19C7254B009F888A /* UIKit.framework in Frameworks */,
 				2F778FA719C7254B009F888A /* Foundation.framework in Frameworks */,
+				1850B69A215D4CFD9B12D760 /* libPods-Stereopsis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +111,69 @@
 				2F778FC619C7254B009F888A /* XCTest.framework in Frameworks */,
 				2F778FC819C7254B009F888A /* UIKit.framework in Frameworks */,
 				2F778FC719C7254B009F888A /* Foundation.framework in Frameworks */,
+				E9DB6F2B50684347B2FF142F /* libPods-StereopsisTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F64DBCC19C7266F0073B07D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F64DBCF19C726AA0073B07D /* JHKImageList.h */,
+				2F64DBD019C726AA0073B07D /* JHKImageList.m */,
+				2F64DBD119C726AA0073B07D /* JHKStereoImage.h */,
+				2F64DBD219C726AA0073B07D /* JHKStereoImage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2F64DBCD19C726780073B07D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F64DBD519C726BD0073B07D /* JHKImageRotationView.h */,
+				2F64DBD619C726BD0073B07D /* JHKImageRotationView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F64DBCE19C726840073B07D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F64DBE119C7270E0073B07D /* Gesture Recognizer */,
+				2F778FBB19C7254B009F888A /* JHKViewController.h */,
+				2F778FBC19C7254B009F888A /* JHKViewController.m */,
+				2F64DBD819C726DC0073B07D /* JHKMenuViewController.h */,
+				2F64DBD919C726DC0073B07D /* JHKMenuViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2F64DBE119C7270E0073B07D /* Gesture Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				2F64DBDE19C727080073B07D /* JHKAccelerometerActionRecognizer.h */,
+				2F64DBDF19C727080073B07D /* JHKAccelerometerActionRecognizer.m */,
+			);
+			name = "Gesture Recognizer";
+			sourceTree = "<group>";
+		};
+		2F64DBE219C7272B0073B07D /* Stereo Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F64DBE319C7273D0073B07D /* 1L.png */,
+				2F64DBE419C7273D0073B07D /* 1R.png */,
+				2F64DBE519C7273D0073B07D /* 2L.png */,
+				2F64DBE619C7273D0073B07D /* 2R.png */,
+				2F64DBE719C7273D0073B07D /* 3L.gif */,
+				2F64DBE819C7273D0073B07D /* 3R.gif */,
+				2F64DBE919C7273D0073B07D /* 4L.gif */,
+				2F64DBEA19C7273D0073B07D /* 4R.gif */,
+			);
+			name = "Stereo Images";
+			sourceTree = "<group>";
+		};
 		2F778F9A19C7254B009F888A = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +181,8 @@
 				2F778FCB19C7254B009F888A /* StereopsisTests */,
 				2F778FA519C7254B009F888A /* Frameworks */,
 				2F778FA419C7254B009F888A /* Products */,
+				0279D60025E44057AE8A0A2E /* Pods-Stereopsis.xcconfig */,
+				115B21300EA44759968C0F0C /* Pods-StereopsisTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +202,8 @@
 				2F778FA819C7254B009F888A /* CoreGraphics.framework */,
 				2F778FAA19C7254B009F888A /* UIKit.framework */,
 				2F778FC519C7254B009F888A /* XCTest.framework */,
+				3E15ABBCCBE44BDE992629DC /* libPods-Stereopsis.a */,
+				8E92FE4F6F444488A0D9EFED /* libPods-StereopsisTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +211,12 @@
 		2F778FAC19C7254B009F888A /* Stereopsis */ = {
 			isa = PBXGroup;
 			children = (
+				2F64DBCC19C7266F0073B07D /* Model */,
+				2F64DBCD19C726780073B07D /* View */,
+				2F64DBCE19C726840073B07D /* Controller */,
 				2F778FB519C7254B009F888A /* JHKAppDelegate.h */,
 				2F778FB619C7254B009F888A /* JHKAppDelegate.m */,
 				2F778FB819C7254B009F888A /* Main.storyboard */,
-				2F778FBB19C7254B009F888A /* JHKViewController.h */,
-				2F778FBC19C7254B009F888A /* JHKViewController.m */,
 				2F778FBE19C7254B009F888A /* Images.xcassets */,
 				2F778FAD19C7254B009F888A /* Supporting Files */,
 			);
@@ -126,6 +226,7 @@
 		2F778FAD19C7254B009F888A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F64DBE219C7272B0073B07D /* Stereo Images */,
 				2F778FAE19C7254B009F888A /* Stereopsis-Info.plist */,
 				2F778FAF19C7254B009F888A /* InfoPlist.strings */,
 				2F778FB219C7254B009F888A /* main.m */,
@@ -137,8 +238,8 @@
 		2F778FCB19C7254B009F888A /* StereopsisTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F778FD119C7254B009F888A /* StereopsisTests.m */,
 				2F778FCC19C7254B009F888A /* Supporting Files */,
+				2F263BFA19C73290007FFCD2 /* JHKImageListTests.m */,
 			);
 			path = StereopsisTests;
 			sourceTree = "<group>";
@@ -159,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F778FD519C7254B009F888A /* Build configuration list for PBXNativeTarget "Stereopsis" */;
 			buildPhases = (
+				9CA4ABB1E6754D87B0BC2EEF /* Check Pods Manifest.lock */,
 				2F778F9F19C7254B009F888A /* Sources */,
 				2F778FA019C7254B009F888A /* Frameworks */,
 				2F778FA119C7254B009F888A /* Resources */,
+				5186717E80AB498AA43C4737 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F778FD819C7254B009F888A /* Build configuration list for PBXNativeTarget "StereopsisTests" */;
 			buildPhases = (
+				C2E515089E824A70BD77BF25 /* Check Pods Manifest.lock */,
 				2F778FC019C7254B009F888A /* Sources */,
 				2F778FC119C7254B009F888A /* Frameworks */,
 				2F778FC219C7254B009F888A /* Resources */,
+				1A96EB1E8CA64B35BAE78B59 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +334,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F64DBF119C7273D0073B07D /* 4L.gif in Resources */,
+				2F64DBEC19C7273D0073B07D /* 1R.png in Resources */,
+				2F64DBEF19C7273D0073B07D /* 3L.gif in Resources */,
 				2F778FBF19C7254B009F888A /* Images.xcassets in Resources */,
 				2F778FB119C7254B009F888A /* InfoPlist.strings in Resources */,
+				2F64DBEE19C7273D0073B07D /* 2R.png in Resources */,
+				2F64DBEB19C7273D0073B07D /* 1L.png in Resources */,
 				2F778FBA19C7254B009F888A /* Main.storyboard in Resources */,
+				2F64DBF219C7273D0073B07D /* 4R.gif in Resources */,
+				2F64DBED19C7273D0073B07D /* 2L.png in Resources */,
+				2F64DBF019C7273D0073B07D /* 3R.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,13 +358,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A96EB1E8CA64B35BAE78B59 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StereopsisTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5186717E80AB498AA43C4737 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Stereopsis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA4ABB1E6754D87B0BC2EEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E515089E824A70BD77BF25 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F778F9F19C7254B009F888A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F778FBD19C7254B009F888A /* JHKViewController.m in Sources */,
-				2F778FB719C7254B009F888A /* JHKAppDelegate.m in Sources */,
+				2F38C20319C7306B0062B8BA /* JHKImageList.m in Sources */,
+				2F38C20419C7306B0062B8BA /* JHKStereoImage.m in Sources */,
+				2F38C20519C7306B0062B8BA /* JHKImageRotationView.m in Sources */,
+				2F38C20619C7306B0062B8BA /* JHKAccelerometerActionRecognizer.m in Sources */,
+				2F38C20719C7306B0062B8BA /* JHKViewController.m in Sources */,
+				2F38C20819C7306B0062B8BA /* JHKMenuViewController.m in Sources */,
+				2F38C20919C7306B0062B8BA /* JHKAppDelegate.m in Sources */,
 				2F778FB319C7254B009F888A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F778FD219C7254B009F888A /* StereopsisTests.m in Sources */,
+				2F263BFB19C73290007FFCD2 /* JHKImageListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +555,7 @@
 		};
 		2F778FD619C7254B009F888A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0279D60025E44057AE8A0A2E /* Pods-Stereopsis.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +569,7 @@
 		};
 		2F778FD719C7254B009F888A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0279D60025E44057AE8A0A2E /* Pods-Stereopsis.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -400,6 +583,7 @@
 		};
 		2F778FD919C7254B009F888A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115B21300EA44759968C0F0C /* Pods-StereopsisTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stereopsis.app/Stereopsis";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -422,6 +606,7 @@
 		};
 		2F778FDA19C7254B009F888A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115B21300EA44759968C0F0C /* Pods-StereopsisTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stereopsis.app/Stereopsis";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -457,6 +642,7 @@
 				2F778FD719C7254B009F888A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F778FD819C7254B009F888A /* Build configuration list for PBXNativeTarget "StereopsisTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +651,7 @@
 				2F778FDA19C7254B009F888A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
