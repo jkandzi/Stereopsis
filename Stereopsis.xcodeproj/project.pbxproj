@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F778FA719C7254B009F888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA619C7254B009F888A /* Foundation.framework */; };
+		2F778FA919C7254B009F888A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA819C7254B009F888A /* CoreGraphics.framework */; };
+		2F778FAB19C7254B009F888A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FAA19C7254B009F888A /* UIKit.framework */; };
+		2F778FB119C7254B009F888A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FAF19C7254B009F888A /* InfoPlist.strings */; };
+		2F778FB319C7254B009F888A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FB219C7254B009F888A /* main.m */; };
+		2F778FB719C7254B009F888A /* JHKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FB619C7254B009F888A /* JHKAppDelegate.m */; };
+		2F778FBA19C7254B009F888A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FB819C7254B009F888A /* Main.storyboard */; };
+		2F778FBD19C7254B009F888A /* JHKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FBC19C7254B009F888A /* JHKViewController.m */; };
+		2F778FBF19C7254B009F888A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FBE19C7254B009F888A /* Images.xcassets */; };
+		2F778FC619C7254B009F888A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FC519C7254B009F888A /* XCTest.framework */; };
+		2F778FC719C7254B009F888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA619C7254B009F888A /* Foundation.framework */; };
+		2F778FC819C7254B009F888A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FAA19C7254B009F888A /* UIKit.framework */; };
+		2F778FD019C7254B009F888A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FCE19C7254B009F888A /* InfoPlist.strings */; };
+		2F778FD219C7254B009F888A /* StereopsisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F778FD119C7254B009F888A /* StereopsisTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F778FC919C7254B009F888A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F778F9B19C7254B009F888A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F778FA219C7254B009F888A;
+			remoteInfo = Stereopsis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F778FA319C7254B009F888A /* Stereopsis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stereopsis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F778FA619C7254B009F888A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F778FA819C7254B009F888A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F778FAA19C7254B009F888A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F778FAE19C7254B009F888A /* Stereopsis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stereopsis-Info.plist"; sourceTree = "<group>"; };
+		2F778FB019C7254B009F888A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F778FB219C7254B009F888A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F778FB419C7254B009F888A /* Stereopsis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stereopsis-Prefix.pch"; sourceTree = "<group>"; };
+		2F778FB519C7254B009F888A /* JHKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHKAppDelegate.h; sourceTree = "<group>"; };
+		2F778FB619C7254B009F888A /* JHKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHKAppDelegate.m; sourceTree = "<group>"; };
+		2F778FB919C7254B009F888A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F778FBB19C7254B009F888A /* JHKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHKViewController.h; sourceTree = "<group>"; };
+		2F778FBC19C7254B009F888A /* JHKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHKViewController.m; sourceTree = "<group>"; };
+		2F778FBE19C7254B009F888A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F778FC419C7254B009F888A /* StereopsisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StereopsisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F778FC519C7254B009F888A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2F778FCD19C7254B009F888A /* StereopsisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StereopsisTests-Info.plist"; sourceTree = "<group>"; };
+		2F778FCF19C7254B009F888A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F778FD119C7254B009F888A /* StereopsisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StereopsisTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F778FA019C7254B009F888A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FA919C7254B009F888A /* CoreGraphics.framework in Frameworks */,
+				2F778FAB19C7254B009F888A /* UIKit.framework in Frameworks */,
+				2F778FA719C7254B009F888A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F778FC119C7254B009F888A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FC619C7254B009F888A /* XCTest.framework in Frameworks */,
+				2F778FC819C7254B009F888A /* UIKit.framework in Frameworks */,
+				2F778FC719C7254B009F888A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F778F9A19C7254B009F888A = {
+			isa = PBXGroup;
+			children = (
+				2F778FAC19C7254B009F888A /* Stereopsis */,
+				2F778FCB19C7254B009F888A /* StereopsisTests */,
+				2F778FA519C7254B009F888A /* Frameworks */,
+				2F778FA419C7254B009F888A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F778FA419C7254B009F888A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FA319C7254B009F888A /* Stereopsis.app */,
+				2F778FC419C7254B009F888A /* StereopsisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F778FA519C7254B009F888A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FA619C7254B009F888A /* Foundation.framework */,
+				2F778FA819C7254B009F888A /* CoreGraphics.framework */,
+				2F778FAA19C7254B009F888A /* UIKit.framework */,
+				2F778FC519C7254B009F888A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F778FAC19C7254B009F888A /* Stereopsis */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FB519C7254B009F888A /* JHKAppDelegate.h */,
+				2F778FB619C7254B009F888A /* JHKAppDelegate.m */,
+				2F778FB819C7254B009F888A /* Main.storyboard */,
+				2F778FBB19C7254B009F888A /* JHKViewController.h */,
+				2F778FBC19C7254B009F888A /* JHKViewController.m */,
+				2F778FBE19C7254B009F888A /* Images.xcassets */,
+				2F778FAD19C7254B009F888A /* Supporting Files */,
+			);
+			path = Stereopsis;
+			sourceTree = "<group>";
+		};
+		2F778FAD19C7254B009F888A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FAE19C7254B009F888A /* Stereopsis-Info.plist */,
+				2F778FAF19C7254B009F888A /* InfoPlist.strings */,
+				2F778FB219C7254B009F888A /* main.m */,
+				2F778FB419C7254B009F888A /* Stereopsis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F778FCB19C7254B009F888A /* StereopsisTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FD119C7254B009F888A /* StereopsisTests.m */,
+				2F778FCC19C7254B009F888A /* Supporting Files */,
+			);
+			path = StereopsisTests;
+			sourceTree = "<group>";
+		};
+		2F778FCC19C7254B009F888A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F778FCD19C7254B009F888A /* StereopsisTests-Info.plist */,
+				2F778FCE19C7254B009F888A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F778FA219C7254B009F888A /* Stereopsis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F778FD519C7254B009F888A /* Build configuration list for PBXNativeTarget "Stereopsis" */;
+			buildPhases = (
+				2F778F9F19C7254B009F888A /* Sources */,
+				2F778FA019C7254B009F888A /* Frameworks */,
+				2F778FA119C7254B009F888A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stereopsis;
+			productName = Stereopsis;
+			productReference = 2F778FA319C7254B009F888A /* Stereopsis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F778FC319C7254B009F888A /* StereopsisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F778FD819C7254B009F888A /* Build configuration list for PBXNativeTarget "StereopsisTests" */;
+			buildPhases = (
+				2F778FC019C7254B009F888A /* Sources */,
+				2F778FC119C7254B009F888A /* Frameworks */,
+				2F778FC219C7254B009F888A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F778FCA19C7254B009F888A /* PBXTargetDependency */,
+			);
+			name = StereopsisTests;
+			productName = StereopsisTests;
+			productReference = 2F778FC419C7254B009F888A /* StereopsisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F778F9B19C7254B009F888A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JHK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Justus Kandzi";
+				TargetAttributes = {
+					2F778FC319C7254B009F888A = {
+						TestTargetID = 2F778FA219C7254B009F888A;
+					};
+				};
+			};
+			buildConfigurationList = 2F778F9E19C7254B009F888A /* Build configuration list for PBXProject "Stereopsis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F778F9A19C7254B009F888A;
+			productRefGroup = 2F778FA419C7254B009F888A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F778FA219C7254B009F888A /* Stereopsis */,
+				2F778FC319C7254B009F888A /* StereopsisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F778FA119C7254B009F888A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FBF19C7254B009F888A /* Images.xcassets in Resources */,
+				2F778FB119C7254B009F888A /* InfoPlist.strings in Resources */,
+				2F778FBA19C7254B009F888A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F778FC219C7254B009F888A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FD019C7254B009F888A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F778F9F19C7254B009F888A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FBD19C7254B009F888A /* JHKViewController.m in Sources */,
+				2F778FB719C7254B009F888A /* JHKAppDelegate.m in Sources */,
+				2F778FB319C7254B009F888A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F778FC019C7254B009F888A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778FD219C7254B009F888A /* StereopsisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F778FCA19C7254B009F888A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F778FA219C7254B009F888A /* Stereopsis */;
+			targetProxy = 2F778FC919C7254B009F888A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F778FAF19C7254B009F888A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F778FB019C7254B009F888A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F778FB819C7254B009F888A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F778FB919C7254B009F888A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F778FCE19C7254B009F888A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F778FCF19C7254B009F888A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F778FD319C7254B009F888A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F778FD419C7254B009F888A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F778FD619C7254B009F888A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stereopsis/Stereopsis-Prefix.pch";
+				INFOPLIST_FILE = "Stereopsis/Stereopsis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F778FD719C7254B009F888A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stereopsis/Stereopsis-Prefix.pch";
+				INFOPLIST_FILE = "Stereopsis/Stereopsis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2F778FD919C7254B009F888A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stereopsis.app/Stereopsis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stereopsis/Stereopsis-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StereopsisTests/StereopsisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2F778FDA19C7254B009F888A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stereopsis.app/Stereopsis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stereopsis/Stereopsis-Prefix.pch";
+				INFOPLIST_FILE = "StereopsisTests/StereopsisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F778F9E19C7254B009F888A /* Build configuration list for PBXProject "Stereopsis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F778FD319C7254B009F888A /* Debug */,
+				2F778FD419C7254B009F888A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F778FD519C7254B009F888A /* Build configuration list for PBXNativeTarget "Stereopsis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F778FD619C7254B009F888A /* Debug */,
+				2F778FD719C7254B009F888A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F778FD819C7254B009F888A /* Build configuration list for PBXNativeTarget "StereopsisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F778FD919C7254B009F888A /* Debug */,
+				2F778FDA19C7254B009F888A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F778F9B19C7254B009F888A /* Project object */;
+}
