@@ -173,7 +173,7 @@
 				2F64DBE919C7273D0073B07D /* 4L.gif */,
 				2F64DBEA19C7273D0073B07D /* 4R.gif */,
 			);
-			name = "Stereo Images";
+			path = "Stereo Images";
 			sourceTree = "<group>";
 		};
 		2F778F9A19C7254B009F888A = {
