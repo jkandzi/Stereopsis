@@ -11,6 +11,8 @@
 
 @interface JHKImageList : NSObject
 
+- (instancetype)initWithContentsOfFile:(NSString *)path;
+
 - (JHKStereoImage *)currentImage;
 - (JHKStereoImage *)nextImage;
 - (JHKStereoImage *)previousImage;

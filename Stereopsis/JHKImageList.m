@@ -16,14 +16,20 @@
 
 @implementation JHKImageList
 
-- (instancetype)init
-{
+- (instancetype)initWithContentsOfFile:(NSString *)path {
     self = [super init];
     if (self) {
-        _images = @[[[JHKStereoImage alloc] initWithImagePrefix:@"1" type:JHKStereoImageTypeStill],
-                    [[JHKStereoImage alloc] initWithImagePrefix:@"2" type:JHKStereoImageTypeStill],
-                    [[JHKStereoImage alloc] initWithImagePrefix:@"3" type:JHKStereoImageTypeAnimated],
-                    [[JHKStereoImage alloc] initWithImagePrefix:@"4" type:JHKStereoImageTypeAnimated]];
+        NSArray *imageSources = [[NSArray alloc] initWithContentsOfFile:path];
+        NSMutableArray *mutableImages = [NSMutableArray new];
+        
+        for (NSDictionary *imageDictionary in imageSources) {
+            NSString *prefix = [imageDictionary objectForKey:@"name"];
+            BOOL animated = [[imageDictionary objectForKey:@"animated"] boolValue];
+            JHKStereoImage *image = [[JHKStereoImage alloc] initWithImagePrefix:prefix animated:animated];
+            [mutableImages addObject:image];
+        }
+        
+        _images = [mutableImages copy];
         _currentImageId = 0;
     }
     return self;

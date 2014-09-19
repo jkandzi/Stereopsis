@@ -29,7 +29,9 @@
 {
     [super viewDidLoad];
     
-    self.imageList = [JHKImageList new];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"images" ofType:@"plist"];
+    self.imageList = [[JHKImageList alloc] initWithContentsOfFile:path];
+    
     self.leftImageRotationView.delegate = self;
     
     JHKStereoImage *stereoImage = [self.imageList currentImage];

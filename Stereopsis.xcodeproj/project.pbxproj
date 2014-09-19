@@ -35,6 +35,7 @@
 		2F778FC719C7254B009F888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FA619C7254B009F888A /* Foundation.framework */; };
 		2F778FC819C7254B009F888A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F778FAA19C7254B009F888A /* UIKit.framework */; };
 		2F778FD019C7254B009F888A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F778FCE19C7254B009F888A /* InfoPlist.strings */; };
+		2FBE643F19CC556C00696086 /* images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE643E19CC556C00696086 /* images.plist */; };
 		E9DB6F2B50684347B2FF142F /* libPods-StereopsisTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E92FE4F6F444488A0D9EFED /* libPods-StereopsisTests.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		2F778FC519C7254B009F888A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2F778FCD19C7254B009F888A /* StereopsisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StereopsisTests-Info.plist"; sourceTree = "<group>"; };
 		2F778FCF19C7254B009F888A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FBE643E19CC556C00696086 /* images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = images.plist; sourceTree = "<group>"; };
 		3E15ABBCCBE44BDE992629DC /* libPods-Stereopsis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stereopsis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E92FE4F6F444488A0D9EFED /* libPods-StereopsisTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StereopsisTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,7 +143,6 @@
 		2F64DBCE19C726840073B07D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2F64DBE119C7270E0073B07D /* Gesture Recognizer */,
 				2F778FBB19C7254B009F888A /* JHKViewController.h */,
 				2F778FBC19C7254B009F888A /* JHKViewController.m */,
 				2F64DBD819C726DC0073B07D /* JHKMenuViewController.h */,
@@ -162,6 +163,7 @@
 		2F64DBE219C7272B0073B07D /* Stereo Images */ = {
 			isa = PBXGroup;
 			children = (
+				2FBE643E19CC556C00696086 /* images.plist */,
 				2F64DBE319C7273D0073B07D /* 1L.png */,
 				2F64DBE419C7273D0073B07D /* 1R.png */,
 				2F64DBE519C7273D0073B07D /* 2L.png */,
@@ -214,6 +216,8 @@
 				2F64DBCC19C7266F0073B07D /* Model */,
 				2F64DBCD19C726780073B07D /* View */,
 				2F64DBCE19C726840073B07D /* Controller */,
+				2F64DBE119C7270E0073B07D /* Gesture Recognizer */,
+				2F64DBE219C7272B0073B07D /* Stereo Images */,
 				2F778FB519C7254B009F888A /* JHKAppDelegate.h */,
 				2F778FB619C7254B009F888A /* JHKAppDelegate.m */,
 				2F778FB819C7254B009F888A /* Main.storyboard */,
@@ -226,7 +230,6 @@
 		2F778FAD19C7254B009F888A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F64DBE219C7272B0073B07D /* Stereo Images */,
 				2F778FAE19C7254B009F888A /* Stereopsis-Info.plist */,
 				2F778FAF19C7254B009F888A /* InfoPlist.strings */,
 				2F778FB219C7254B009F888A /* main.m */,
@@ -338,6 +341,7 @@
 				2F64DBEC19C7273D0073B07D /* 1R.png in Resources */,
 				2F64DBEF19C7273D0073B07D /* 3L.gif in Resources */,
 				2F778FBF19C7254B009F888A /* Images.xcassets in Resources */,
+				2FBE643F19CC556C00696086 /* images.plist in Resources */,
 				2F778FB119C7254B009F888A /* InfoPlist.strings in Resources */,
 				2F64DBEE19C7273D0073B07D /* 2R.png in Resources */,
 				2F64DBEB19C7273D0073B07D /* 1L.png in Resources */,

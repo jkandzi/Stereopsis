@@ -11,16 +11,16 @@
 
 @interface JHKStereoImage ()
 @property (nonatomic) NSString *prefix;
-@property (nonatomic) JHKStereoImageType type;
+@property (nonatomic) BOOL animated;
 @end
 
 @implementation JHKStereoImage
 
-- (instancetype)initWithImagePrefix:(NSString *)prefix type:(JHKStereoImageType)type {
+- (instancetype)initWithImagePrefix:(NSString *)prefix animated:(BOOL)animated {
     self = [super init];
     if (self) {
         _prefix = prefix;
-        _type = type;
+        _animated = animated;
     }
     return self;
 }
@@ -34,7 +34,7 @@
 }
 
 - (UIImage *)imageWithPostfix:(NSString *)postfix {
-    if (self.type == JHKStereoImageTypeAnimated) {
+    if (self.animated) {
         return [YLGIFImage imageNamed:[NSString stringWithFormat:@"%@%@.gif", self.prefix, postfix]];
     } else {
         return [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", self.prefix, postfix]];
