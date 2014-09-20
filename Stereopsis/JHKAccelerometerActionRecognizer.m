@@ -36,7 +36,7 @@
                 x = oldX + alpha * (x - oldX);
                 oldX = x;
                 
-                NSLog(@"%f", x);
+                DLog(@"%f", x);
                 
                 if (x < 0.9f) {
                     if (!triggered) {
