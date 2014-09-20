@@ -36,7 +36,9 @@
                 x = oldX + alpha * (x - oldX);
                 oldX = x;
                 
-                if (x < 0.85) {
+//                NSLog(@"%f", x);
+                
+                if (x < 0.9f) {
                     if (!triggered) {
                         IMP imp = [target methodForSelector:action];
                         void (*func)(id, SEL) = (void *)imp;
@@ -44,23 +46,17 @@
                         
                         triggered = YES;
                     }
-                } else  if (x > 0.9) {
+                } else  if (x > 0.93f) {
                     triggered = NO;
                 }
             }];
-            
-            if (_motionManager.isMagnetometerAvailable) {
-                NSOperationQueue *queue = [NSOperationQueue mainQueue];
-                [_motionManager startMagnetometerUpdatesToQueue:queue withHandler:^(CMMagnetometerData *magnetometerData, NSError *error) {
-                    
-                    NSLog(@"%f, %f, %f", magnetometerData.magneticField.x,
-                          magnetometerData.magneticField.y,
-                          magnetometerData.magneticField.z);
-                }];
-            }
         }
     }
     return self;
+}
+
+- (void)stop {
+    [self.motionManager stopAccelerometerUpdates];
 }
 
 @end

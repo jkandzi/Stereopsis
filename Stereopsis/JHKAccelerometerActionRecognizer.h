@@ -11,5 +11,6 @@
 @interface JHKAccelerometerActionRecognizer : NSObject
 
 - (instancetype)initWithTarget:(id)target action:(SEL)action;
+- (void)stop;
 
 @end

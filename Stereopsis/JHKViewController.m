@@ -13,7 +13,7 @@
 #import "JHKAccelerometerActionRecognizer.h"
 
 @interface JHKViewController () <JHKImageRotationViewDelegate>
-@property (nonatomic, strong) JHKImageList *imageList;
+@property (nonatomic, strong, readonly) JHKImageList *imageList;
 @property (weak, nonatomic) IBOutlet JHKImageRotationView *leftImageRotationView;
 @property (weak, nonatomic) IBOutlet JHKImageRotationView *rightImageRotationView;
 
@@ -24,13 +24,11 @@
 @end
 
 @implementation JHKViewController
+@synthesize imageList = _imageList;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"images" ofType:@"plist"];
-    self.imageList = [[JHKImageList alloc] initWithContentsOfFile:path];
     
     self.leftImageRotationView.delegate = self;
     
@@ -39,10 +37,15 @@
     [self.rightImageRotationView displayImage:stereoImage.rightImage];
     
     self.accelerometerActionRecognizer = [[JHKAccelerometerActionRecognizer alloc] initWithTarget:self action:@selector(switchImageInDirection:)];
-    
-    self.dismissingViewController = NO;
 }
 
+- (JHKImageList *)imageList {
+    if (!_imageList) {
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"images" ofType:@"plist"];
+        _imageList = [[JHKImageList alloc] initWithContentsOfFile:path];
+    }
+    return _imageList;
+}
 
 - (IBAction)didSwipeUp {
     [self switchImageInDirection:JHKImageSwitchDirectionUp];
@@ -73,6 +76,7 @@
 - (IBAction)dismissStereopsisView {
     if (!self.isDismissingViewController) {
         self.dismissingViewController = YES;
+        [self.accelerometerActionRecognizer stop];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
