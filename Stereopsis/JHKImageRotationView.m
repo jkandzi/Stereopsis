@@ -51,9 +51,9 @@ static const float JHKImageRotationViewRadians = 0.30f;
         [newImageView setTransform:CGAffineTransformIdentity];
     } completion:^(BOOL finished) {
         [weakSelf.delegate imageRotationViewCompletedRotation:weakSelf];
+        [self.visibleImageView removeFromSuperview];
+        self.visibleImageView = newImageView;
     }];
-    
-    self.visibleImageView = newImageView;
 }
 
 - (CGAffineTransform)transformationWithRadians:(float)radians {
