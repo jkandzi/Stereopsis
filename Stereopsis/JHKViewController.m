@@ -16,11 +16,8 @@
 @property (nonatomic, strong, readonly) JHKImageList *imageList;
 @property (weak, nonatomic) IBOutlet JHKImageRotationView *leftImageRotationView;
 @property (weak, nonatomic) IBOutlet JHKImageRotationView *rightImageRotationView;
-
 @property (nonatomic, strong) JHKAccelerometerActionRecognizer *accelerometerActionRecognizer;
-
 @property (nonatomic, getter = areRotationViewsAnimating) BOOL rotationViewsAnimating;
-@property (nonatomic, getter = isDismissingViewController) BOOL dismissingViewController;
 @end
 
 @implementation JHKViewController
@@ -47,15 +44,21 @@
     return _imageList;
 }
 
+- (unsigned int)currentImageID {
+    return self.imageList.currentImageID;
+}
+
+- (void)setCurrentImageID:(unsigned int)currentImageID {
+    self.imageList.currentImageID = currentImageID;
+}
+
 - (IBAction)didSwipeUp {
     [self switchImageInDirection:JHKImageSwitchDirectionUp];
 }
 
 - (IBAction)didSwipeDown {
     [self switchImageInDirection:JHKImageSwitchDirectionDown];
-    
 }
-
 
 - (void)switchImageInDirection:(JHKImageSwitchDirection)direction {
     if (!self.areRotationViewsAnimating) {
@@ -73,12 +76,8 @@
     }
 }
 
-- (IBAction)dismissStereopsisView {
-    if (!self.isDismissingViewController) {
-        self.dismissingViewController = YES;
-        [self.accelerometerActionRecognizer stop];
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [self.accelerometerActionRecognizer stop];
 }
 
 - (void)imageRotationViewCompletedRotation:(JHKImageRotationView *)imageRotationView {

@@ -7,6 +7,7 @@
 //
 
 #import "JHKMenuViewController.h"
+#import "JHKViewController.h"
 
 @interface JHKMenuViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoPosition;
@@ -14,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *aboutView;
 
 @property (nonatomic, getter = isAboutViewVisible) BOOL aboutViewVisible;
+
+@property (nonatomic) unsigned int currentImageID;
 @end
 
 @implementation JHKMenuViewController
@@ -50,6 +53,18 @@
                          self.aboutView.alpha = newAlpha;
                      }];
     self.aboutViewVisible = !self.isAboutViewVisible;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[JHKViewController class]]) {
+        ((JHKViewController *)segue.destinationViewController).currentImageID = self.currentImageID;
+    }
+}
+
+- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)segue {
+    if ([segue.sourceViewController isKindOfClass:[JHKViewController class]]) {
+        self.currentImageID = ((JHKViewController *)segue.sourceViewController).currentImageID;
+    }
 }
 
 @end

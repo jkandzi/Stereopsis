@@ -19,5 +19,4 @@
 @property (nonatomic, weak) id <JHKImageRotationViewDelegate> delegate;
 - (void)displayImage:(UIImage *)image;
 - (void)displayImage:(UIImage *)image direction:(JHKImageSwitchDirection)direction;
-
 @end

@@ -14,5 +14,5 @@ typedef NS_ENUM(NSUInteger, JHKImageSwitchDirection) {
 };
 
 @interface JHKViewController : UIViewController
-
+@property (nonatomic) unsigned int currentImageID;
 @end

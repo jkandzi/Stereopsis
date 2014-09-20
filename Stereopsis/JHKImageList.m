@@ -11,7 +11,6 @@
 
 @interface JHKImageList ()
 @property (nonatomic, strong) NSArray *images;
-@property (nonatomic) unsigned long currentImageId;
 @end
 
 @implementation JHKImageList
@@ -30,22 +29,23 @@
         }
         
         _images = [mutableImages copy];
-        _currentImageId = 0;
+        _currentImageID = 0;
     }
     return self;
 }
 
 - (JHKStereoImage *)nextImage {
-    self.currentImageId = (self.currentImageId + 1) % self.images.count;
+    self.currentImageID = (self.currentImageID + 1) % self.images.count;
     return self.currentImage;
 }
 
 - (JHKStereoImage *)previousImage {
-    self.currentImageId = (self.images.count + (self.currentImageId - 1)) % self.images.count;
+    self.currentImageID = (self.images.count + (self.currentImageID - 1)) % self.images.count;
     return self.currentImage;
 }
 
 - (JHKStereoImage *)currentImage {
-    return self.images[self.currentImageId];
+    return self.images[self.currentImageID];
 }
+
 @end

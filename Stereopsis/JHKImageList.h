@@ -10,9 +10,9 @@
 @class JHKStereoImage;
 
 @interface JHKImageList : NSObject
+@property (nonatomic) unsigned int currentImageID;
 
 - (instancetype)initWithContentsOfFile:(NSString *)path;
-
 - (JHKStereoImage *)currentImage;
 - (JHKStereoImage *)nextImage;
 - (JHKStereoImage *)previousImage;

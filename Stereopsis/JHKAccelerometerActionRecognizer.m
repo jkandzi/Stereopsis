@@ -22,7 +22,7 @@
     if (self) {
         _target = target;
         _action = action;
-        
+
         _motionManager = [CMMotionManager new];
         
         if (_motionManager.isAccelerometerAvailable) {
@@ -36,7 +36,7 @@
                 x = oldX + alpha * (x - oldX);
                 oldX = x;
                 
-//                NSLog(@"%f", x);
+                NSLog(@"%f", x);
                 
                 if (x < 0.9f) {
                     if (!triggered) {
